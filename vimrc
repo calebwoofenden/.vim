@@ -9,7 +9,9 @@ set showmode                    " show the current mode
 filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
-set expandtab ts=4 sw=4 ai
+set expandtab
+set autoindent
+set smartindent
 syntax on
 set number
 set scrolloff=999               " Places the cursor in the vertical center of the screen where possible
