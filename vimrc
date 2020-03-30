@@ -23,6 +23,7 @@ set clipboard=unnamed           " Sets the clipboard to default to system
 " Show EOL type and last modified timestamp, right after the filename
 set statusline=%<%F%h%m%r\ [%{&ff}]\ (%{strftime(\"%H:%M\ %d/%m/%Y\",getftime(expand(\"%:p\")))})%=%l,%c%V\ %P
 
+autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2
 "------------------------------------------------------------------------------
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
